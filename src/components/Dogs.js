@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 
-const Dogs = () => {
+const Dogs = (props) => {
     const [dogs, setDogs] = useState()
   
     const makeApiCall = () => {
@@ -15,17 +15,19 @@ const Dogs = () => {
       makeApiCall()
       }, [])
   
-    //   console.log(dogs)
-  
+    console.log(dogs)
       const doggyImages = dogs && dogs.map((dog, index)=> {
         return (
-          <img src={dog.url} key={index} className="doggyPics" alt=''/>
+          <div className="dogCard">
+            <img src={dog.url} key={index} alt='' className="pics"/>
+            <button onClick={()=>props.addMe(dogs)} className="button">Adopt Me!</button>
+          </div>
         )
       })
-    
     return (
-        <div className="dogsSection">
-            <div>{doggyImages}</div>
+        <div className="dogSection">
+            {doggyImages}
+
 
         </div>
     );

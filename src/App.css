@@ -2,7 +2,34 @@
   text-align: center;
 }
 
-.doggyPics, .catPics{
-  width: 500px;
-  height: 500px;
+nav {
+  background: rgb(159, 208, 235);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.navBar{
+  color: white;
+  text-decoration: none;
+}
+
+.dogCard, .catCard{
+  width: 400px;
+  height: 450px;
+  /* display: flex; */
+  border: 1px solid pink;
+  margin: 0 auto;
+}
+
+.pics{
+  width: 400px;
+  height: 400px;
+}
+
+.button{
+  height: 30px;
+  border-radius: 20%;
 }

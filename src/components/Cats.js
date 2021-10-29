@@ -15,16 +15,19 @@ const Cats = () => {
       makeApiCall()
       }, [])
   
-      console.log(cats)
+    //   console.log(cats)
   
       const catImages = cats && cats.map((cat, index)=> {
         return (
-          <img src={cat.url} key={index} className="catPics" alt=''/>
+          <div className="catCard">
+          <img src={cat.url} key={index} className="pics" alt=''/>
+          <button className="button">Adopt Me!</button>
+          </div>
         )
       })
     
     return (
-        <div className="catsSection">
+        <div className="catSection">
             <div>{catImages}</div>
 
         </div>
