@@ -1,38 +1,33 @@
 import React, { useState, useEffect } from 'react';
+import {Route, Link, Switch, Redirect} from 'react-router-dom';
 import './App.css';
+import Cats from './components/Cats';
+import Dogs from './components/Dogs';
+import Home from './components/Home';
 
 function App() {
-  
-  const [dogs, setDogs] = useState()
-  
-  const makeApiCall = () => {
-    return (
-      fetch ('https://api.thedogapi.com/v1/images/search?limit=30&page=3&order=desc?api_key=07b26afd-c760-43a7-b8f9-31834f6d598d')
-      .then((response)=>response.json())
-      .then((data)=>setDogs(data))
-    )
-  }
-
-  useEffect(()=>{
-    makeApiCall()
-    }, [])
-
-    console.log(dogs)
-
-    const doggyImages = dogs && dogs.map((dog, index)=> {
-      return (
-        <img src={dog.url} key={index} className="doggyPics" alt=''/>
-      )
-    })
   
   return (
     <div className="App">
       <nav>
-        <h1>Doggy Date</h1>
+        <Link to='/'>
+        <h1>Animal Play Date</h1>
+        </Link>
+
+        <Link to='/dogs'>
+        <h3>Dogs</h3>
+        </Link>
+
+        <Link to='/cats'>
+        <h3>Cats</h3>
+        </Link>
       </nav>
 
-
-      {doggyImages}
+      <div className="dogSection">
+        <Route path='/' exact component={Home}/>
+        <Route path='/dogs' exact component={Dogs}/>
+        <Route path='/cats' exact component={Cats}/>
+      </div>
     </div>
   );
 }

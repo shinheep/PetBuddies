@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.doggyPics{
+.doggyPics, .catPics{
   width: 500px;
   height: 500px;
 }
