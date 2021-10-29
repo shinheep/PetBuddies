@@ -47,7 +47,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 #### PostMVP EXAMPLE
 
-- 
+- Dog Graphic to display on homepage
 
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
@@ -56,7 +56,7 @@ Based on the initial logic defined in the previous sections try and breakdown th
 
 | Component | Description | 
 | --- | :---: |  
-| App | Nav Bar | 
+| App | Nav Bar, Cute Dog Graphic in front (maybe) | 
 | Animals Component | Displays animals on load | 
 | Dog Component | Renders dogs on load | 
 | Cat Component | Renders cat on load |
