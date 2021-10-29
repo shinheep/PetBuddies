@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+# Project Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Links
 
-## Available Scripts
+- [https://github.com/adgreenie/react.git](https://github.com/adgreenie/react.git)
+- [https://answer10.web.app/](https://answer10.web.app/)
 
-In the project directory, you can run:
+## Project Description
 
-### `npm start`
+For this project, I plan to make an Adopt-an-Animal React app. I will use the The Dog API. Originally, I wanted to use PetFinder API, to display picures of animals that actually were in need of adoption, but the API Key for that expired every hour, which meant my data would only display for that hour, and then I would have to fetch for another API Key. Just for project purposes, I chose to use the Dog API, but one day, I hope to actually use an API that displays animals that are in need of adoption to create a project similar to this. Ideally, in the Mobile App version, I would like to have a carousel of the animals the user can swipe through, as well as a search bar where they can filter through the animals to try to find a different type, breed, age, etc. In the Desktop version, I will have more animals on displaying on the front page.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## API
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+https://api.thedogapi.com/v1/images/search?limit=30&page=3&order=desc
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+Array(30)
+0:
+breeds: [{…}]
+height: 1024
+id: "SkZY1e9NQ"
+url: "https://cdn2.thedogapi.com/images/SkZY1e9NQ_1280.jpg"
+width: 912
+[[Prototype]]: Object
 
-### `npm run build`
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Wireframes
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-### `npm run eject`
+- [wireframes](https://res.cloudinary.com/dxqwpud0l/image/upload/v1635480186/Screen_Shot_2021-10-28_at_8.59.18_PM_g2xcbh.png)
+- [react architecture](https://res.cloudinary.com/dxqwpud0l/image/upload/v1635480490/Screen_Shot_2021-10-28_at_9.07.55_PM_r6xrye.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### MVP/PostMVP - 5min
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### MVP EXAMPLE
+- Fully functional site that displays the animals up for adoption at PetFinder
+    - Dog Component
+    - Cat Component
+    - "Take Me Home" Component, where users can select all animals they're interested in to be added to this list. At the end of browsing, they can go to this component to thoroughly look through and decide which animal to adopt.
+- Carousel that displays the different animal pictures
+- Search Bar that allows the user to type in different types/breeds
+- Credit to PetFinder
 
-## Learn More
+#### PostMVP EXAMPLE
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Components
+##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
 
-### Code Splitting
+Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+| Component | Description | 
+| --- | :---: |  
+| App | Nav Bar | 
+| Animals Component | Displays animals on load | 
+| Dog Component | Renders dogs on load | 
+| Cat Component | Renders cat on load |
+| Take Me Home Component | Where users can look at all the animals they're interested in|
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+Unless otherwise noted, time is listed in hours:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Create React app and files for all components | H | 1 |  |  |
+| Basic Navbar & Footer | H | 1 |  | |
+| Set up basic React routing | H | 1 |  |  |
+| Make PetFinder(Animal, Dog, and Cat) API call | H | 4 |  |  |
+| Parse through data, and render important information about dogs | H | 3 |  |  |
+| Create button to add/remove animal from "Take me Home" Component | H | 3 |  |  |
+| CSS | H | 4 |  |  |
+| Style using Bootstrap or Bulma | L | 3 |  |  |
 
-### Advanced Configuration
+| Total | H | 20 |  |  |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Additional Libraries
+Bootstrap/Bulma
 
-### Deployment
+## Code Snippet
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  Code snippet should not be greater than 10 lines of code.
 
-### `npm run build` fails to minify
+```
+  const makeApiCall = () => {
+    return (
+      fetch ('https://api.thedogapi.com/v1/images/search?limit=30&page=3&order=desc?api_key=07b26afd-c760-43a7-b8f9-31834f6d598d')
+      .then((response)=>response.json())
+      .then((data)=>setDogs(data))
+    )
+  }
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  useEffect(()=>{
+    makeApiCall()
+    }, [])
+```
+I'm proud of my API Call because it works! :)

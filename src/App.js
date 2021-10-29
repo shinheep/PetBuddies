@@ -1,23 +1,38 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
+  
+  const [dogs, setDogs] = useState()
+  
+  const makeApiCall = () => {
+    return (
+      fetch ('https://api.thedogapi.com/v1/images/search?limit=30&page=3&order=desc?api_key=07b26afd-c760-43a7-b8f9-31834f6d598d')
+      .then((response)=>response.json())
+      .then((data)=>setDogs(data))
+    )
+  }
+
+  useEffect(()=>{
+    makeApiCall()
+    }, [])
+
+    console.log(dogs)
+
+    const doggyImages = dogs && dogs.map((dog, index)=> {
+      return (
+        <img src={dog.url} key={index} className="doggyPics" alt=''/>
+      )
+    })
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav>
+        <h1>Doggy Date</h1>
+      </nav>
+
+
+      {doggyImages}
     </div>
   );
 }
