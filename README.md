@@ -2,12 +2,9 @@
 
 ## Project Links
 
-- [https://github.com/adgreenie/react.git](https://github.com/adgreenie/react.git)
-- [https://answer10.web.app/](https://answer10.web.app/)
-
 ## Project Description
 
-For this project, I plan to make an Adopt-an-Animal React app. I will use the The Dog API. Originally, I wanted to use PetFinder API, to display picures of animals that actually were in need of adoption, but the API Key for that expired every hour, which meant my data would only display for that hour, and then I would have to fetch for another API Key. Just for project purposes, I chose to use the Dog API, but one day, I hope to actually use an API that displays animals that are in need of adoption to create a project similar to this. Ideally, in the Mobile App version, I would like to have a carousel of the animals the user can swipe through, as well as a search bar where they can filter through the animals to try to find a different type, breed, age, etc. In the Desktop version, I will have more animals on displaying on the front page.
+For this project, I plan to make an Adopt-an-Animal React app. I will use the The Dog API. Originally, I wanted to use PetFinder API to display information of animals that actually were in need of adoption, but the API Key for that expired every hour, which meant my data would only display for that hour, and then I would have to fetch for another API Key. Just for project purposes, I chose to use the Dog API, but one day, I hope to actually use an API that displays animals that are in need of adoption to create a project similar to this. Ideally, in the Mobile App version, I would like to have a carousel of the animals the user can swipe through, as well as a search bar where they can filter through the animals to try to find a different type, breed, age, etc. In the Desktop version, I will have more animals on displaying on the front page.
 
 ## API
 
