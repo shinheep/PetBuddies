@@ -47,7 +47,7 @@ function App() {
         <Switch>
           <Route path='/' exact component={Home}/>
           <Route path='/dogs' exact render={() => <Dogs addMe={addMe}/>}/>
-          <Route path='/cats' exact component={Cats}/>
+          <Route path='/cats' exact render={() => <Cats addMe={addMe}/>}/>
           <Route path='/takemehome' exact render={() => <TakeMeHome takeMeHome={takeMeHome} removeMe={removeMe}/>}/>
         </Switch>
       </main>

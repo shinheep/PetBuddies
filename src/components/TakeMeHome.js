@@ -5,9 +5,10 @@ const TakeMeHome = (props) => {
 
     const squad = props.takeMeHome.map((animal, index) => {
         return (
-            <div className="squad">
+            <div className="dogCard">
                 <img src={animal.url} alt='' className="pics"></img>
-                <button onClick={()=>props.removeMe(index)}>Not Today</button>
+                <button onClick={()=>props.removeMe(index)}>Not Quite the One</button>
+                <button>The One!</button>
             </div>
         )
     })

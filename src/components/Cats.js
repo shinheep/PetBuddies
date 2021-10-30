@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 
-const Cats = () => {
+const Cats = (props) => {
     const [cats, setCats] = useState()
   
     const makeApiCall = () => {
@@ -21,7 +21,7 @@ const Cats = () => {
         return (
           <div className="catCard">
           <img src={cat.url} key={index} className="pics" alt=''/>
-          <button className="button">Adopt Me!</button>
+          <button onClick={()=>props.addMe(cat)} className="button">Adopt Me!</button>
           </div>
         )
       })
