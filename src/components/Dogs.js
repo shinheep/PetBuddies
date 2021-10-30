@@ -15,12 +15,12 @@ const Dogs = (props) => {
       makeApiCall()
       }, [])
   
-    console.log(dogs)
+    // console.log(dogs)
       const doggyImages = dogs && dogs.map((dog, index)=> {
         return (
           <div className="dogCard">
             <img src={dog.url} key={index} alt='' className="pics"/>
-            <button onClick={()=>props.addMe(dogs)} className="button">Adopt Me!</button>
+            <button onClick={()=>props.addMe(dog)} className="button">Adopt Me!</button>
           </div>
         )
       })

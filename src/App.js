@@ -8,9 +8,17 @@ import TakeMeHome from './components/TakeMeHome';
 
 function App() {  
   
-  const[takeMeHome, setTakeMeHome] = useState([])
+  const [takeMeHome, setTakeMeHome] = useState([])
   const addMe = (animal) => {
     setTakeMeHome([...takeMeHome, animal]);
+  }
+
+  const removeMe = (indexToRemove) => {
+    let newSquad = takeMeHome.filter((animally, index)=>{
+      return index !==indexToRemove
+    })
+
+    setTakeMeHome(newSquad)
   }
 
 
@@ -40,7 +48,7 @@ function App() {
           <Route path='/' exact component={Home}/>
           <Route path='/dogs' exact render={() => <Dogs addMe={addMe}/>}/>
           <Route path='/cats' exact component={Cats}/>
-          <Route path='/takemehome' exact render={() => <TakeMeHome />}/>
+          <Route path='/takemehome' exact render={() => <TakeMeHome takeMeHome={takeMeHome} removeMe={removeMe}/>}/>
         </Switch>
       </main>
     </div>
