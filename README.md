@@ -68,12 +68,12 @@ Unless otherwise noted, time is listed in hours:
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Create React app and files for all components | H | 1 |  |  |
+| Create React app and files for all components | H | 1 | 1.5 | 1.5 |
 | Basic Navbar & Footer | H | 1 |  | |
-| Set up basic React routing | H | 1 |  |  |
-| Make PetFinder(Animal, Dog, and Cat) API call | H | 4 |  |  |
-| Parse through data, and render important information about dogs | H | 3 |  |  |
-| Create button to add/remove animal from "Take me Home" Component | H | 3 |  |  |
+| Set up basic React routing | H | 1 | 1 | 1 |
+| Make PetFinder(Animal, Dog, and Cat) API call | H | 4 | 3 | 3 |
+| Parse through data, and render important information about dogs | H | 3 | 2 | 2 |
+| Create button to add/remove animal from "Take me Home" Component | H | 3 | 2 | 2 |
 | CSS | H | 4 |  |  |
 | Style using Bootstrap or Bulma | L | 3 |  |  |
 

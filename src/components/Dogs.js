@@ -5,7 +5,7 @@ const Dogs = (props) => {
   
     const makeApiCall = () => {
       return (
-        fetch ('https://api.thedogapi.com/v1/images/search?limit=30&page=3&order=desc?api_key=07b26afd-c760-43a7-b8f9-31834f6d598d')
+        fetch ('https://api.thedogapi.com/v1/images/search?limit=100&page=3&order=desc?api_key=07b26afd-c760-43a7-b8f9-31834f6d598d')
         .then((response)=>response.json())
         .then((data)=>setDogs(data))
       )
@@ -15,10 +15,10 @@ const Dogs = (props) => {
       makeApiCall()
       }, [])
   
-    // console.log(dogs)
+    console.log(dogs)
       const doggyImages = dogs && dogs.map((dog, index)=> {
         return (
-          <div className="dogCard">
+          <div key={index} className="dogCard">
             <img src={dog.url} key={index} alt='' className="pics"/>
             <button onClick={()=>props.addMe(dog)} className="button">Adopt Me!</button>
           </div>
@@ -26,7 +26,10 @@ const Dogs = (props) => {
       })
     return (
         <div className="dogSection">
-            {doggyImages}
+            <input type='text' placeholder="Search for a breed"/><input type='submit'/>
+            
+              <div className='doggy'>{doggyImages}</div>
+
 
 
         </div>

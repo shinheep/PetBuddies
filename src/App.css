@@ -1,27 +1,53 @@
 .App {
   text-align: center;
+  background: white;
+  font-family: "Varela Round";
 }
 
-nav {
-  background: rgb(159, 208, 235);
-  color: white;
+.header {
+  background: white;
+  color: #557FE9;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
-}
-
-.navBar{
-  color: white;
   text-decoration: none;
 }
 
+.navBar{
+  color: #557FE9;
+  text-decoration: none;
+  padding: 10px;
+  display: none;
+}
+
+nav {
+  display: flex;
+}
+
+.hamburger {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+/* Home Component Styling Start */
+
+
+
+/* Home Component Styling End */
+
+/* Dog & Cat Component Styling Start */
+
 .dogCard, .catCard{
-  width: 400px;
-  height: 450px;
-  /* display: flex; */
-  border: 1px solid pink;
+  width: 405px;
+  height: 440px;
+  background-color: white;
+  border: 3px solid #5680E9;
   margin: 0 auto;
+  margin: 10px;
 }
 
 .pics{
@@ -29,7 +55,59 @@ nav {
   height: 400px;
 }
 
+.doggy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.kitty {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .button{
   height: 30px;
-  border-radius: 20%;
+  background-color: #5680E9;
+  color: white;
 }
+
+.button:hover{
+  background-color: #95b0f6;
+  color: black;
+}
+
+/* Dog & Cat Component Styling End */
+
+/* Tame Me Home Component Styling Start */
+
+.adoptedSquad{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+/* Take Me Home Component Styling End */
+
+
+/*Responsive Design */
+
+/*Tablet view */
+@media only screen and (min-width: 678px){
+  .navBar{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .hamburger{
+    display: none;
+  }
+
+};
+
+/*Desktop view */
+@media only screen and (min-width: 992px){
+
+};

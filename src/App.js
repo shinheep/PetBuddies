@@ -25,23 +25,31 @@ function App() {
   return (    
     
     <div className="App">
-      <nav>
-        <Link to='/' className='navBar'>
-        <h1>Animal Play Date</h1>
+        
+      <header className='header'>
+        <Link to='/' className='header'>
+          <h1>Pet Farm</h1>
         </Link>
+      
+        <nav>
+          <Link to='/dogs' className='navBar'>
+          <h3>Dogs</h3>
+          </Link>
 
-        <Link to='/dogs' className='navBar'>
-        <h3>Dogs</h3>
-        </Link>
+          <Link to='/cats' className='navBar'>
+          <h3>Cats</h3>
+          </Link>
 
-        <Link to='/cats' className='navBar'>
-        <h3>Cats</h3>
-        </Link>
+          <Link to='/takemehome' className='navBar'>
+          <h3>Take Me Home!</h3>
+          </Link>
 
-        <Link to='/takemehome' className='navBar'>
-        <h3>Take Me Home!</h3>
-        </Link>
-      </nav>
+          <a href="#" class="hamburger"><i class="fas fa-bars"></i></a>
+        </nav>
+
+      </header>
+
+
 
       <main>
         <Switch>
