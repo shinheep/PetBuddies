@@ -1,4 +1,5 @@
 import React from 'react';
+import ControlledCarousel from './Carousel';
 
 const Home = () => {
     
@@ -7,6 +8,8 @@ const Home = () => {
             <header>
                 <h1>home</h1>
             </header>
+
+            <ControlledCarousel />
 
         </div>
     );
