@@ -30,7 +30,7 @@ function App() {
         
       <Navbar className="navBar" collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container className='navBar'>
-          <Navbar.Brand href="/home" className="title">Pet Buddies</Navbar.Brand>
+          <Navbar.Brand href="/" className="title">Pet Buddies</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
@@ -48,7 +48,7 @@ function App() {
 
       <main>
         <Switch>
-          <Route path='/home' exact component={Home}/>
+          <Route path='/' exact component={Home}/>
           <Route path='/dogs' exact render={() => <Dogs addMe={addMe}/>}/>
           <Route path='/cats' exact render={() => <Cats addMe={addMe}/>}/>
           <Route path='/petcare' exact component={PetCare}/>
