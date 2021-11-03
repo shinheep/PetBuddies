@@ -1,14 +1,16 @@
 import React from 'react';
 
 const TakeMeHome = (props) => {
-    console.log(props)
+    const handleTheOneButton = () => {
+        console.log("Yay!")
+    }
 
     const squad = props.takeMeHome.map((animal, index) => {
         return (
             <div key={index} className="dogCard">
                 <img src={animal.url} alt='' className="pics"></img>
                 <button onClick={()=>props.removeMe(index)} className="button">Not Quite the One</button>
-                <button className="button">The One!</button>
+                <button onClick={handleTheOneButton} className="button">The One!</button>
             </div>
         )
     })

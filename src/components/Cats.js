@@ -28,7 +28,6 @@ const Cats = (props) => {
     
     return (
         <div className="catSection">
-            <input type='text' placeholder="Search for a breed"/><input type='submit'/>
             <div className='kitty'>{catImages}</div>
 
         </div>

@@ -2,35 +2,7 @@
   text-align: center;
   background: white;
   font-family: "Varela Round";
-}
-
-.header {
-  background: white;
-  color: #557FE9;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-decoration: none;
-}
-
-.navBar{
-  color: #557FE9;
-  text-decoration: none;
-  padding: 10px;
-  display: none;
-}
-
-nav {
-  display: flex;
-}
-
-.hamburger {
-  display: flex;
-  justify-content: flex-end;
-  font-size: 25px;
-  text-decoration: none;
   color: black;
-  padding: 10px;
 }
 
 /* Home Component Styling Start */
@@ -41,10 +13,10 @@ nav {
 /* Dog & Cat Component Styling Start */
 
 .dogCard, .catCard{
-  width: 405px;
-  height: 405px;
+  width: 410px;
+  height: 410px;
   background-color: white;
-  border: 3px solid #5680E9;
+  border: 5px solid rgb(167, 96, 198);
   border-radius: 10%;
   margin: 0 auto;
   margin: 20px;
@@ -54,6 +26,24 @@ nav {
   width: 400px;
   height: 400px;
   border-radius: 10%;
+}
+
+.card {
+  border-radius: 10%;
+  margin: 5px;
+}
+
+.cardButtons {
+  display: flex;
+  justify-content: center;
+}
+
+.dogPic{
+  width: 320px;
+  height: 350px;
+  border-radius: 10%;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .doggy {
@@ -70,13 +60,12 @@ nav {
 
 .button{
   height: 30px;
-  background-color: #5680E9;
-  color: white;
-  border: none;
+  background-color: #95b0f6;
+  color: black;
 }
 
 .button:hover{
-  background-color: #95b0f6;
+  background-color: #59CFC3;
   color: black;
 }
 

@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from 'react';
+import { Card, Button } from 'react-bootstrap';
+import LearnMoreAboutMe from './PopoverButton';
 
 const Dogs = (props) => {
     const [dogs, setDogs] = useState()
@@ -16,17 +18,26 @@ const Dogs = (props) => {
       }, [])
   
     console.log(dogs)
-      const doggyImages = dogs && dogs.map((dog, index)=> {
+      const doggyImages = dogs && dogs.map((dog, index,)=> {
         return (
-          <div key={index} className="dogCard">
-            <img src={dog.url} key={index} alt='' className="pics"/>
-            <button onClick={()=>props.addMe(dog)} className="button">Adopt Me!</button>
-          </div>
+          // <div key={index} className="dogCard">
+          //   <img src={dog.url} key={index} alt='' className="pics"/>
+          //   <button onClick={()=>props.addMe(dog)} className="button">Adopt Me!</button>
+          // </div>
+
+          <>
+          <Card className='card' style={{ width: '23rem' }}>
+          <Card.Img className="dogPic" variant="top" src={dog.url} />
+          <Card.Body className='cardButtons'>
+            <LearnMoreAboutMe/>
+            <Button onClick={()=>props.addMe(dog)} variant="primary">Adopt Me!</Button>
+          </Card.Body>
+          </Card>
+          </>
         )
       })
     return (
         <div className="dogSection">
-            <input type='text' placeholder="Search for a breed"/><input type='submit'/>
             
               <div className='doggy'>{doggyImages}</div>
 

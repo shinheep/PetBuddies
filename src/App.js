@@ -28,9 +28,9 @@ function App() {
     
     <div className="App">
         
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar className="header" collapseOnSelect expand="lg" bg="primary" variant="dark">
         <Container>
-          <Navbar.Brand href="/">Pet Buddies</Navbar.Brand>
+          <Navbar.Brand href="/" className="title">Pet Buddies</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
@@ -43,6 +43,8 @@ function App() {
         </Container>
       </Navbar>
 
+      
+
 
       <main>
         <Switch>
@@ -53,6 +55,7 @@ function App() {
           <Route path='/takemehome' exact render={() => <TakeMeHome takeMeHome={takeMeHome} removeMe={removeMe}/>}/>
         </Switch>
       </main>
+
     </div>
   );
 }
