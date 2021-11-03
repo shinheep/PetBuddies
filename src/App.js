@@ -30,7 +30,7 @@ function App() {
         
       <Navbar className="navBar" collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container className='navBar'>
-          <Navbar.Brand className="title">
+          <Navbar.Brand href="#">
             <Link className="nav-link" to="/">Pet Buddies</Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
