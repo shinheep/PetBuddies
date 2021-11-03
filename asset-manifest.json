@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/PetBuddies/static/css/main.0db7d972.chunk.css",
-    "main.js": "/PetBuddies/static/js/main.22a69528.chunk.js",
-    "main.js.map": "/PetBuddies/static/js/main.22a69528.chunk.js.map",
+    "main.js": "/PetBuddies/static/js/main.c86ce661.chunk.js",
+    "main.js.map": "/PetBuddies/static/js/main.c86ce661.chunk.js.map",
     "runtime-main.js": "/PetBuddies/static/js/runtime-main.dd89ef4a.js",
     "runtime-main.js.map": "/PetBuddies/static/js/runtime-main.dd89ef4a.js.map",
     "static/css/2.8c0e6b67.chunk.css": "/PetBuddies/static/css/2.8c0e6b67.chunk.css",
-    "static/js/2.29dd08b2.chunk.js": "/PetBuddies/static/js/2.29dd08b2.chunk.js",
-    "static/js/2.29dd08b2.chunk.js.map": "/PetBuddies/static/js/2.29dd08b2.chunk.js.map",
+    "static/js/2.5413acd0.chunk.js": "/PetBuddies/static/js/2.5413acd0.chunk.js",
+    "static/js/2.5413acd0.chunk.js.map": "/PetBuddies/static/js/2.5413acd0.chunk.js.map",
     "static/js/3.64079fec.chunk.js": "/PetBuddies/static/js/3.64079fec.chunk.js",
     "static/js/3.64079fec.chunk.js.map": "/PetBuddies/static/js/3.64079fec.chunk.js.map",
     "index.html": "/PetBuddies/index.html",
     "static/css/2.8c0e6b67.chunk.css.map": "/PetBuddies/static/css/2.8c0e6b67.chunk.css.map",
     "static/css/main.0db7d972.chunk.css.map": "/PetBuddies/static/css/main.0db7d972.chunk.css.map",
-    "static/js/2.29dd08b2.chunk.js.LICENSE.txt": "/PetBuddies/static/js/2.29dd08b2.chunk.js.LICENSE.txt"
+    "static/js/2.5413acd0.chunk.js.LICENSE.txt": "/PetBuddies/static/js/2.5413acd0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.dd89ef4a.js",
     "static/css/2.8c0e6b67.chunk.css",
-    "static/js/2.29dd08b2.chunk.js",
+    "static/js/2.5413acd0.chunk.js",
     "static/css/main.0db7d972.chunk.css",
-    "static/js/main.22a69528.chunk.js"
+    "static/js/main.c86ce661.chunk.js"
   ]
 }
