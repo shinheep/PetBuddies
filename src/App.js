@@ -28,8 +28,8 @@ function App() {
     
     <div className="App">
         
-      <Navbar className="header" collapseOnSelect expand="lg" bg="primary" variant="dark">
-        <Container>
+      <Navbar className="navBar" collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Container className='navBar'>
           <Navbar.Brand href="/" className="title">Pet Buddies</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">

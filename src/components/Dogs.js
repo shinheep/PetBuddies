@@ -30,7 +30,7 @@ const Dogs = (props) => {
           <Card.Img className="dogPic" variant="top" src={dog.url} />
           <Card.Body className='cardButtons'>
             <LearnMoreAboutMe/>
-            <Button onClick={()=>props.addMe(dog)} variant="primary">Adopt Me!</Button>
+            <Button className="adopt button" onClick={()=>props.addMe(dog)} variant="primary">Adopt Me!</Button>
           </Card.Body>
           </Card>
           </>

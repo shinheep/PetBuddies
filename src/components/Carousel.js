@@ -18,8 +18,8 @@ function ControlledCarousel() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>Danny</h3>
-          <p>Danny was brought in by his owner. His family moved across country, and just couldn't bring him along. Danny is a sweet corgi mix that needs a loving home!</p>
+          <h3 class='carouselText'>Danny</h3>
+          <p class='carouselText'>Danny decided to quit his job of being a good house dog, and has decided to venture off to find the love of his life. We found him sleeping in a pizza shop with several open packages of pepperoni. We're hoping to find him a forever home, and a forever love!</p>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -30,8 +30,8 @@ function ControlledCarousel() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>Tony</h3>
-          <p>Tony loves to hide in boots. His family accidentally sold a pair of boots with Tony in them. We are trying to locate his family.</p>
+          <h3 class='carouselText'>Tony</h3>
+          <p class='carouselText'>Tony loves to hide in boots. His family accidentally sold a pair of boots with Tony in them. Tony is looking for his family.</p>
         </Carousel.Caption>
       </Carousel.Item>
       
@@ -43,8 +43,8 @@ function ControlledCarousel() {
         />
 
         <Carousel.Caption>
-          <h3>Floofy</h3>
-          <p>Floofy was found chasing a chicken delivery truck! We believe she has a family, as she knows her basic commands, like "Sit," "Stay," and "Shake". We are looking for her family, but also another family that could foster/adopt her! Warning: she loves chicken! </p>
+          <h3 class='carouselText'>Floofy</h3>
+          <p class='carouselText'>Floofy was found chasing a chicken delivery truck! We believe she has a family, as she knows her basic commands, like "Sit," "Stay," and "Shake". We are looking for her family, but also another family that could foster/adopt her! Warning: she loves chicken! </p>
         </Carousel.Caption>
       </Carousel.Item>
       
@@ -56,9 +56,9 @@ function ControlledCarousel() {
         />
 
         <Carousel.Caption>
-          <h3>Rex</h3>
-          <p>
-            Rex was found abandoned at a gas station. He had apparently been there for a few nights before being found. He loves being pet, and any affection from all humans. He's a sweet boy that is looking for his forever home!
+          <h3 class='carouselText'>Rex</h3>
+          <p class='carouselText'>
+            Rex has decided that his family doesn't give him enough treats. He has taken it upon himself to put himself up for adoption to find another family that gives him more treats on the daily. He's still living with his current family.
           </p>
         </Carousel.Caption>
       </Carousel.Item>

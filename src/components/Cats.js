@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from 'react';
+import { Card, Button } from 'react-bootstrap';
+import LearnMoreAboutMe from './PopoverButton';
 
 const Cats = (props) => {
     const [cats, setCats] = useState()
@@ -19,10 +21,15 @@ const Cats = (props) => {
   
       const catImages = cats && cats.map((cat, index)=> {
         return (
-          <div key={index} className="catCard">
-          <img src={cat.url} key={index} className="pics" alt=''/>
-          <button onClick={()=>props.addMe(cat)} className="button">Adopt Me!</button>
-          </div>
+          <>
+          <Card className='card' style={{ width: '23rem' }}>
+          <Card.Img className="catPic" variant="top" src={cat.url} />
+          <Card.Body className='cardButtons'>
+            <LearnMoreAboutMe/>
+            <Button className='adopt button' onClick={()=>props.addMe(cat)} variant="primary">Adopt Me!</Button>
+          </Card.Body>
+          </Card>
+          </>
         )
       })
     

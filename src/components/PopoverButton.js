@@ -14,7 +14,7 @@ const popover = (
   );
   
   const LearnMoreAboutMe = () => (
-    <OverlayTrigger trigger="click" placement="right" overlay={popover}>
+    <OverlayTrigger trigger="click" placement="top" overlay={popover}>
       <Button className="button" variant="primary">Learn More About Me!</Button>
     </OverlayTrigger>
   );
