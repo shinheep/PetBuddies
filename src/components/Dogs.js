@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { Card, Button } from 'react-bootstrap';
 import LearnMoreAboutMe from './PopoverButton';
+import dogData from '../dogData';
 
 const Dogs = (props) => {
     const [dogs, setDogs] = useState()
@@ -16,6 +17,7 @@ const Dogs = (props) => {
     useEffect(()=>{
       makeApiCall()
       }, [])
+
   
     console.log(dogs)
       const doggyImages = dogs && dogs.map((dog, index,)=> {
@@ -29,7 +31,7 @@ const Dogs = (props) => {
           <Card className='card' style={{ width: '23rem' }}>
           <Card.Img className="dogPic" variant="top" src={dog.url} />
           <Card.Body className='cardButtons'>
-            <LearnMoreAboutMe/>
+            <LearnMoreAboutMe />
             <Button className="adopt button" onClick={()=>props.addMe(dog)} variant="primary">Adopt Me!</Button>
           </Card.Body>
           </Card>
