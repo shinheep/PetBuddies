@@ -8,6 +8,8 @@ const Home = () => {
 
             <ControlledCarousel />
 
+            <div className="homeText"><i class="fas fa-paw paw"></i> Adopt one of your own today!</div>
+
         </div>
     );
 };

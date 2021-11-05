@@ -47,13 +47,15 @@ const Contact = () => {
     }
     
     return (
-        <div className="contact">
-            <div><input className='name form' value={name} onChange={handleNameChange} placeHolder="Name" type='text'/></div>
-            <div><input className='email form' value={email} onChange={handleEmailChange} placeHolder="Email" type='text'/></div>
-            <div><input className='message form' value={message} onChange={handleMessageChange} placeHolder="Message" type='text'/></div>
-            <div><input onClick={handleSubmit} type='submit'/></div>
+        <div className="contactPage">
+            <div className="contact">
+                <div><input className='name form' value={name} onChange={handleNameChange} placeHolder="Name" type='text'/></div>
+                <div><input className='email form' value={email} onChange={handleEmailChange} placeHolder="Email" type='text'/></div>
+                <div><input className='message form' value={message} onChange={handleMessageChange} placeHolder="Message" type='text'/></div>
+                <div><input onClick={handleSubmit} type='submit'/></div>
+            </div>
 
-            <div className="copywright">Built with <i class="fas fa-heart"></i> by Shinhee | 2021</div>
+            <div className="copywright">Built with <i class="fas fa-heart heart"></i> by Shinhee | 2021</div>
         </div>
     )
 }
