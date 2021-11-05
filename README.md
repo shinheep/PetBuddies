@@ -57,10 +57,13 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Component | Description | 
 | --- | :---: |  
 | App | Nav Bar, Cute Dog Graphic in front (maybe) | 
-| Animals Component | Displays animals on load | 
 | Dog Component | Renders dogs on load | 
 | Cat Component | Renders cat on load |
 | Take Me Home Component | Where users can look at all the animals they're interested in|
+| Pet Care Component | Renders cat on load |
+| Popover Button Component | Renders cat on load |
+| Cat Popover Button Component | Renders cat on load |
+| Contact Component | Renders cat on load |
 
 
 
@@ -69,18 +72,19 @@ Unless otherwise noted, time is listed in hours:
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Create React app and files for all components | H | 1 | 1.5 | 1.5 |
-| Basic Navbar & Footer | H | 1 |  | |
+| Basic Navbar & Footer | H | 1 | 1 | 1 |
 | Set up basic React routing | H | 1 | 1 | 1 |
-| Make PetFinder(Animal, Dog, and Cat) API call | H | 4 | 3 | 3 |
+| Make API call | H | 4 | 3 | 3 |
 | Parse through data, and render important information about dogs | H | 3 | 2 | 2 |
 | Create button to add/remove animal from "Take me Home" Component | H | 3 | 2 | 2 |
-| CSS | H | 4 |  |  |
-| Style using Bootstrap or Bulma | L | 3 |  |  |
+| Different Components | H | 4 | 6 | 6 |
+| CSS | H | 4 | 6 | 6 |
+| Style using Bootstrap or Bulma | L | 3 | 5 | 5 |
 
-| Total | H | 20 |  |  |
+| Total | H | 20 | 26 | 26 |
 
 ## Additional Libraries
-Bootstrap/Bulma
+Bootstrap
 
 ## Code Snippet
 
@@ -100,3 +104,22 @@ Use this section to include a brief code snippet of functionality that you are p
     }, [])
 ```
 I'm proud of my API Call because it works! :)
+
+
+```   
+    const popover = (
+    
+        <Popover id="popover-basic">
+          <Popover.Header as="h3">{adjObj.name}</Popover.Header>
+          <Popover.Body>
+              
+            <ul>
+                <li>{adjObj.adj1}</li>
+                <li>{adjObj.adj2}</li>
+                <li>{adjObj.adj3}</li>
+            </ul>
+          </Popover.Body>
+        </Popover>
+      );
+```
+I'm extremely proud of this code because this one took me almost 3 hours to debug and solve on my own. I thought about writing an Issue ticket over this one, but my stubborn self was adamant on trying to figure it out and learn. At first, I had copied and pasted the Popover Component from Bootstrap and just changed a little bit of the information. The problem with that was each dog and cat was displaying the same set of information. I had to brainstorm how to get each dog and cat to display information unique to them. I ended up creating a function that would pull random adjectives from a data set I created, and display 3 different adjectives per dog per click. The rest of this code can be found in the PopoverButton, or CatPopover component! :)
