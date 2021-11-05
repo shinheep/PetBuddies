@@ -23,12 +23,6 @@ const TakeMeHome = (props) => {
             <h1>Adopt Me!</h1>
             <div className='adoptedSquad'>{squad}</div>
 
-            <div className="contact">
-                <div><input className='name form' placeHolder='Name' type='text'/></div>
-                <div><input className='email form' placeHolder='E-mail' type='text'/></div>
-                <div><input className='message form' placeHolder='Message' type='text'/></div>
-                <div><input type='submit'/></div>
-            </div>
         </div>
     );
 };

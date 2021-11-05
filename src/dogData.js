@@ -43,4 +43,6 @@ const dogData = [
     "Will win in a staring contest"
 ]
 
+
+
 export default dogData;

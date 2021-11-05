@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { Card, Button } from 'react-bootstrap';
 import LearnMoreAboutMe from './PopoverButton';
-import dogData from '../dogData';
 
 const Dogs = (props) => {
     const [dogs, setDogs] = useState()

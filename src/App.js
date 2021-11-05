@@ -7,8 +7,10 @@ import Dogs from './components/Dogs';
 import Home from './components/Home';
 import PetCare from './components/PetCare';
 import TakeMeHome from './components/TakeMeHome';
+import Contact from './components/Contact';
 
 function App() {  
+
   
   const [takeMeHome, setTakeMeHome] = useState([])
   const addMe = (animal) => {
@@ -31,7 +33,7 @@ function App() {
       <Navbar className="navBar" collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container className='navBar'>
           <Navbar.Brand href="#">
-            <Link className="nav-link" to="/">Pet Buddies</Link>
+            <Link className="nav-link" to="/"><span className='petTitle'>Pet</span> <span className='buddies'>buddies</span></Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -40,6 +42,7 @@ function App() {
               <Link className="nav-link" to="/cats">Cats</Link>
               <Link className="nav-link" to="/petcare">Pet Care</Link>
               <Link className="nav-link" to="/takemehome">Take Me Home</Link>
+              <Link className="nav-link" to="/contact">Contact</Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -55,6 +58,7 @@ function App() {
           <Route path='/cats' exact render={() => <Cats addMe={addMe}/>}/>
           <Route path='/petcare' exact component={PetCare}/>
           <Route path='/takemehome' exact render={() => <TakeMeHome takeMeHome={takeMeHome} removeMe={removeMe}/>}/>
+          <Route path='/contact' exact component={Contact}/>
         </Switch>
       </main>
 

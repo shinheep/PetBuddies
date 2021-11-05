@@ -5,6 +5,16 @@
   color: black;
 }
 
+.petTitle {
+  color: white;
+  font-family: "Dancing Script"
+}
+
+.buddies {
+  font-family: "Arima Madurai";
+  color: #D7A24A;
+}
+
 .navBar{
   /* background: pink; */
 }
@@ -16,13 +26,19 @@
   background: rgba(0, 0, 0, 0.5);
 }
 
+.d-block {
+  width: 100%;
+  height: 400px;
+}
+
 /* Home Component Styling End */
 
 /* Dog & Cat Component Styling Start */
 
 .card {
   border-radius: 10%;
-  margin: 5px;
+  margin: 10px;
+  box-shadow: 10px 10px 5px grey;
 }
 
 .cardButtons {
@@ -88,6 +104,47 @@
   justify-content: center;
 }
 
+
+
+/* Take Me Home Component Styling End */
+
+
+/* Pet Care Component Styling Start */
+
+.pageTitle {
+  font-size: 40px;
+  color: white;
+  
+}
+
+.petCare {
+  background-image: url("pembroke-welsh-corgi.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.petCareTitle {
+  color: black;
+  background-color: #f8e184;
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 25px;
+  font-size: 25px;
+}
+
+.details {
+  background-color: rgb(255, 255, 255, 0.5);
+  margin: 20px;
+  border: 20px;
+  border-radius: 25px;
+  font-size: 20px;
+}
+
+/* Pet Care Component Styling End */
+
+/* Contact Component Styling Start */
+
 .contact {
   margin: 20px;
 }
@@ -96,26 +153,42 @@
   height: 300px;
 }
 
+.copywright{
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  font-size: 20px;
+}
 
-/* Take Me Home Component Styling End */
+.fas {
+  color: pink;
+}
 
+/* Contact Component Styling End */
 
 /*Responsive Design */
 
 /*Tablet view */
 @media only screen and (min-width: 678px){
-  .navBar{
-    display: flex;
-    justify-content: flex-end;
+
+  .d-block{
+    height: 600px;
   }
 
-  .hamburger{
-    display: none;
+  .petCare {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
   }
+  
 
 };
 
 /*Desktop view */
 @media only screen and (min-width: 992px){
 
+  .d-block{
+    height: 900px;
+  }
 };

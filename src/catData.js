@@ -1,0 +1,33 @@
+const catData = [
+    "Loyal",
+    "Mischievous",
+    "Smart",
+    "Sleepy",
+    "Thinks she's a dog",
+    "Mysterious",
+    "Bossy",
+    "Lovable",
+    "Sensitive",
+    "Loves hiding in shoes",
+    "Likes going on walks",
+    "Loves hanging by the window sill",
+    "Loyal",
+    "Loves rubbing herself on your leg",
+    "Will pounce on dinner table",
+    "Intelligent",
+    "Huggable",
+    "Relaxed",
+    "Dog-friendly",
+    "Kid-friendly",
+    "Family-friendly",
+    "Lazy",
+    "Trustworthy",
+    "Healthy",
+    "Eats from the dog bowl",
+    "Afraid of water",
+    "Goofy",
+    "Loves to scratch weird textures",
+    "Sneaky"
+]
+
+export default catData;

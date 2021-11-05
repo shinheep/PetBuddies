@@ -1,10 +1,10 @@
 import { Popover, OverlayTrigger, Button } from "react-bootstrap";
-import dogData from "../dogData";
-import dogNames from "../dogNames";
+import catData from "../catData";
+import catNames from "../catName";
 import React, {useState} from 'react';
 
   
-  const LearnMoreAboutMe = (props) => {
+  const CatLearnMoreAboutMe = () => {
     
     const [adjObj, setAdjObj] = useState({
         name: "",
@@ -14,16 +14,16 @@ import React, {useState} from 'react';
     })
 
     const handleClick = () => {
-        const randomIndex = Math.floor(Math.random(dogNames) * 19)
-        const randomAdjective1 = Math.floor(Math.random(dogData) * 41)
-        const randomAdjective2 = Math.floor(Math.random(dogData) * 41)
-        const randomAdjective3 = Math.floor(Math.random(dogData) * 41)
+        const randomIndex = Math.floor(Math.random(catNames) * 18)
+        const randomAdjective1 = Math.floor(Math.random(catData) * 29)
+        const randomAdjective2 = Math.floor(Math.random(catData) * 29)
+        const randomAdjective3 = Math.floor(Math.random(catData) * 29)
         
         setAdjObj({
-            name: dogNames[randomIndex],
-            adj1: dogData[randomAdjective1],
-            adj2: dogData[randomAdjective2],
-            adj3: dogData[randomAdjective3]
+            name: catNames[randomIndex],
+            adj1: catData[randomAdjective1],
+            adj2: catData[randomAdjective2],
+            adj3: catData[randomAdjective3]
         })
     }
     
@@ -49,4 +49,4 @@ import React, {useState} from 'react';
     </OverlayTrigger>
   )};
   
-export default LearnMoreAboutMe;
+export default CatLearnMoreAboutMe;
