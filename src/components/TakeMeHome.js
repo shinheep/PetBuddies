@@ -1,7 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
+import ControlledCarousel from './Carousel';
 
 const TakeMeHome = (props) => {
+    
     const [border, setBorderColor] = useState("")
     
     const handleTheOneButton = () => {
@@ -21,7 +23,10 @@ const TakeMeHome = (props) => {
     return (
         <div className="adopted">
             <h1>Adopt Me!</h1>
+
             <div className='adoptedSquad'>{squad}</div>
+
+            {/* <ControlledCarousel /> */}
 
         </div>
     );

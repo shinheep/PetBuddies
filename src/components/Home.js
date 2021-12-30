@@ -1,14 +1,16 @@
 import React from 'react';
-import ControlledCarousel from './Carousel';
 
 const Home = () => {
     
     return (
         <div className='homePage'>
 
-            <ControlledCarousel />
+            <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_syqnfe7c.json"  background="transparent"  speed="1"  style={{width: "300px"}, {height: "300px"}}    autoplay></lottie-player>
 
-            <div className="homeText"><i class="fas fa-paw paw"></i> Adopt one of your own today!</div>
+            <h1 className="title">Pet Buddies</h1>
+
+            {/* <ControlledCarousel /> */}
+
 
         </div>
     );

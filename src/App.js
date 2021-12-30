@@ -40,7 +40,7 @@ function App() {
             <Nav className="me-auto">
               <Link className="nav-link" to="/dogs">Dogs</Link>
               <Link className="nav-link" to="/cats">Cats</Link>
-              <Link className="nav-link" to="/petcare">Pet Care</Link>
+              {/* <Link className="nav-link" to="/petcare">Pet Care</Link> */}
               <Link className="nav-link" to="/takemehome">Take Me Home</Link>
               <Link className="nav-link" to="/contact">Contact</Link>
             </Nav>
@@ -56,7 +56,7 @@ function App() {
           <Route path='/' exact component={Home}/>
           <Route path='/dogs' exact render={() => <Dogs addMe={addMe}/>}/>
           <Route path='/cats' exact render={() => <Cats addMe={addMe}/>}/>
-          <Route path='/petcare' exact component={PetCare}/>
+          {/* <Route path='/petcare' exact component={PetCare}/> */}
           <Route path='/takemehome' exact render={() => <TakeMeHome takeMeHome={takeMeHome} removeMe={removeMe}/>}/>
           <Route path='/contact' exact component={Contact}/>
         </Switch>

@@ -45,7 +45,7 @@ import React, {useState} from 'react';
     
     return(
     <OverlayTrigger trigger="click" placement="top" overlay={popover}>
-      <Button onClick={handleClick} className="button" variant="primary">Learn More About Me!</Button>
+      <Button onClick={handleClick} className="button" variant="primary">More Info</Button>
     </OverlayTrigger>
   )};
   
